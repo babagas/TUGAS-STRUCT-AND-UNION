@@ -62,7 +62,10 @@ void relevantGrade (){
 void printEachStudent(){
     cout << left << setw(5) << "No." << setw(25) << "Nama" << setw(8) << "Nilai" << setw(8) << "Grade" << endl;
     for(int i = 0;i<P;i++){
-        cout << left << setw(5) << to_string(i+1) + "." << setw(25) << daftarMurid[i].studentLName + ", " + daftarMurid[i].studentFName << setw(8) << daftarMurid[i].testScore << setw(8) << daftarMurid[i].grade << endl; 
+        cout << left << setw(5) << to_string(i+1) + "." 
+            << setw(25) << daftarMurid[i].studentLName + ", " + daftarMurid[i].studentFName 
+            << setw(8) << daftarMurid[i].testScore 
+            << setw(8) << daftarMurid[i].grade << endl; 
     } //menampilkan data tiap murid
 }
 void highestGrade (){
@@ -83,3 +86,4 @@ void highestGradeStudent (){
         } //mencari dan menampilkan murid dengan nilai tertinggi
     }
 }
+
